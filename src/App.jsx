@@ -5,6 +5,7 @@ function App() {
 
   return (
     <>
+      {/* Práctica 1 */}
       <Datos />
     </>
   )
