@@ -1,12 +1,15 @@
 import './App.css'
-import { Datos } from './practicas/01-datos/Datos'
+import { JsxMotivation } from './practicas/02-jsxMotivation/resolucion/JsxMotivation'
+// import { Datos } from './practicas/01-datos/resolucion/Datos';
 
 function App() {
 
   return (
     <>
       {/* Práctica 1 */}
-      <Datos />
+      {/* <Datos /> */}
+      {/* Práctica 2 */}
+      <JsxMotivation />
     </>
   )
 }

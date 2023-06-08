@@ -1,9 +1,11 @@
 import List from './Components/List'
 import Title from './Components/Title'
+import { useState } from 'react';
 
 function Practica02() {
+
   function darleALike() {
-    console.log('le diste like, ahora ve a ver la pelicula')
+    console.log('le diste like, ahora ve a ver la pelicula');
   }
   return (
     <div>
@@ -26,23 +28,25 @@ function Practica02() {
         el crédulo ayudante de Bheem.
       </p>
       <button onClick={darleALike}>Dale a like</button>
-      <Title title='Generos' />
-      <List>
-        <li>Accion</li>
-        <li>Romance</li>
-        <li>drama</li>
-      </List>
-      <Title title='Actores' />
-      <List>
-        <li>Leonardo DiCaprio</li>
-        <li>Brad Pitt</li>
-        <li>Tom Cruise</li>
-        <li>Will Smith</li>
-        <li>Julia Roberts</li>
-        <li>Angelina Jolie</li>
-        <li>Meryl Streep</li>
-        <li>Scarlett Johansson</li>
-      </List>
+      <div className='lists-gender'>
+        <Title title='Generos' />
+        <List>
+          <li>Accion</li>
+          <li>Romance</li>
+          <li>drama</li>
+        </List>
+        <Title title='Actores' />
+        <List>
+          <li>Leonardo DiCaprio</li>
+          <li>Brad Pitt</li>
+          <li>Tom Cruise</li>
+          <li>Will Smith</li>
+          <li>Julia Roberts</li>
+          <li>Angelina Jolie</li>
+          <li>Meryl Streep</li>
+          <li>Scarlett Johansson</li>
+        </List>
+      </div>
     </div>
   )
 }

@@ -1,4 +1,4 @@
-import users from "../../fakeApi/users.json";
+import users from "../../../fakeApi/users.json";
 
 export const Datos = () => {
   // Ejercicio 1
@@ -46,12 +46,25 @@ export const Datos = () => {
 
   const cantidadDeMascotasPorUsuario = (arrayUsersMascotas) => {
     const cantidadDeMascotasPorUsuario = arrayUsersMascotas.map(
-      (user) => `El Usuario ${user.apodo} tiene ${user.mascotas.length} mascotas`
+      (user) =>
+        `El Usuario ${user.apodo} tiene ${user.mascotas.length} mascotas`
     );
     return cantidadDeMascotasPorUsuario;
   };
 
   console.log(cantidadDeMascotasPorUsuario(users));
+
+  const cantidadTotalDeMascotas = (arrayUsers) => {
+    let totalMascotas = arrayUsers.reduce((accumulator, user) => {
+      return accumulator + user.mascotas.length;
+    }, 0);
+
+    return totalMascotas;
+  };
+
+  console.log(
+    `La cantidad de mascotas totales son: ${cantidadTotalDeMascotas(users)}`
+  );
 
   return <div>Desde datos</div>;
 };
