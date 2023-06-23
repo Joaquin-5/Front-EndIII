@@ -1,0 +1,9 @@
+.item {
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    padding: 16px;
+}
+
+:global(.compact-theme) .list {
+    padding: 18px;
+}

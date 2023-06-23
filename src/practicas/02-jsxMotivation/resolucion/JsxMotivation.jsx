@@ -1,6 +1,10 @@
+import { List } from "./Components/List";
 import { Title } from "./Components/Title";
+import { useState } from "react";
 
 export const JsxMotivation = () => {
+  const [count, setCount] = useState(0);
+
   const handlerLike = () => {
     console.log("Se ha likeado la película");
   };
@@ -23,9 +27,29 @@ export const JsxMotivation = () => {
         antes, las reglas han cambiado y el juego sucio se impone en el
         escenario.
       </p>
-      <button onClick={handlerLike}>Dar Like</button>
+      <button
+        onClick={() => {
+          handlerLike();
+          setCount((count) => count + 1);
+        }}
+      >
+        Dar Like: 
+        {" " + count}
+      </button>
       <Title title="Géneros" />
+      <List>
+        <li>Acción</li>
+        <li>Drama</li>
+        <li>Cienca Ficción</li>
+        <li>Infantil</li>
+        <li>Deportes</li>
+      </List>
       <Title title="Actores" />
+      <List>
+        <li>Hugh Jackman</li>
+        <li>Dakota Goyo</li>
+        <li>Evangeline Lily</li>
+      </List>
     </>
   );
 };

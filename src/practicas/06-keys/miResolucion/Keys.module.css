@@ -1,0 +1,17 @@
+.productos {
+  display: flex;
+  gap: 16px;
+}
+
+.cuenta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.usuarios {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}

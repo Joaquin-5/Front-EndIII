@@ -41,7 +41,7 @@
   color: #888;
 }
 
-li {
+/* li {
   list-style: none;
 }
 
@@ -49,7 +49,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+} */
 
 .lists-gender {
   display: flex;

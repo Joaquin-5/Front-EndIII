@@ -12,7 +12,7 @@ export const Datos = () => {
   console.log(users[2].mascotas[1].color);
 
   // Ejercicio 2
-  // Destructoring primer y cuiarto elemento
+  // Destructoring primer y cuarto elemento
   const [first, , , four] = users;
   console.log(first);
   console.log(four);

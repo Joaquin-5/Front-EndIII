@@ -1,6 +1,5 @@
 import List from './Components/List'
 import Title from './Components/Title'
-import { useState } from 'react';
 
 function Practica02() {
 
